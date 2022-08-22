@@ -1,5 +1,5 @@
 
-# Ouboxer  ![outboxerIcon](https://user-images.githubusercontent.com/32839273/185821189-73cce7bf-cce6-45f4-96b3-a50e5dc356f0.png)
+# Outboxer  ![outboxerIcon](https://user-images.githubusercontent.com/32839273/185821189-73cce7bf-cce6-45f4-96b3-a50e5dc356f0.png)
 
 
 Available at [Nuget](https://www.nuget.org/packages/Outboxer/) 
