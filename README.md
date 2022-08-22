@@ -6,7 +6,7 @@ Available at [Nuget](https://www.nuget.org/packages/Outboxer/)
 
 This lib intends to provide a simple and broker agnostic Outbox Pattern implementation.
 
-The only requirement to use Outboxer is to use Entity Framework as we use its built-in Unit-Of-Work to assure everything is published once and guarantee consistency.
+The only requirement to use Outboxer is to use Entity Framework as we use its built-in Unit-Of-Work to assure everything is saved at the same time and guarantee consistency.
 
 To use Outboxer follow these steps
 
