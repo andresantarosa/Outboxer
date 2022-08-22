@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Outboxer", "Outboxer\Outboxer.csproj", "{FC8FAED8-A582-4E06-BDF2-005F757923FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Outboxer.Tests", "Outboxer.Tests\Outboxer.Tests.csproj", "{6A6FE892-75C4-4CF4-A5F7-3FAA8DDE0710}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Outboxer.Test.API", "Outboxer.Test.API\Outboxer.Test.API.csproj", "{F9003374-CA3B-489E-9C4B-60A4310437F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Outboxer.FakeEnqueuer", "Outboxer.FakeEnqueuer\Outboxer.FakeEnqueuer.csproj", "{5EAE965C-F70B-4DEE-AFBE-DD6A7621DD20}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FC8FAED8-A582-4E06-BDF2-005F757923FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC8FAED8-A582-4E06-BDF2-005F757923FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC8FAED8-A582-4E06-BDF2-005F757923FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC8FAED8-A582-4E06-BDF2-005F757923FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A6FE892-75C4-4CF4-A5F7-3FAA8DDE0710}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A6FE892-75C4-4CF4-A5F7-3FAA8DDE0710}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A6FE892-75C4-4CF4-A5F7-3FAA8DDE0710}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A6FE892-75C4-4CF4-A5F7-3FAA8DDE0710}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9003374-CA3B-489E-9C4B-60A4310437F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9003374-CA3B-489E-9C4B-60A4310437F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9003374-CA3B-489E-9C4B-60A4310437F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9003374-CA3B-489E-9C4B-60A4310437F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EAE965C-F70B-4DEE-AFBE-DD6A7621DD20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EAE965C-F70B-4DEE-AFBE-DD6A7621DD20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EAE965C-F70B-4DEE-AFBE-DD6A7621DD20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EAE965C-F70B-4DEE-AFBE-DD6A7621DD20}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
