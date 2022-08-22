@@ -24,7 +24,7 @@ public class StudentsContext : OutboxerContext<StudentsContext>
 }
 ```
 
-* Run `dotnet ef migrations add`/`dotnet ef database update` to crate the outbox table
+* Run `dotnet ef migrations add`/`dotnet ef database update` to create the outbox table
 
 * Register Outboxer using `services.AddOutboxer<StudentsContext>();` at your Startup.cs or Program.cs(.net core 6+)
 
