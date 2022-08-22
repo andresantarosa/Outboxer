@@ -28,6 +28,6 @@ public class StudentsContext : OutboxerContext<StudentsContext>
 
 * Register your custom broker communication class on DI container using `services.AddScoped<IBrokerPublisher, MyBrokerImplementation>()`. You can use AddSingleton as well.
 
-* To publish a message inject the interface `IPublisher` and use the `Publish` method like this `await _publisher.Publish(new Entry("studentsQueue", student));`. The content will just be added to outbox and enqueued on your broker if the database commit runs fine.
+* To publish a message inject the interface `IPublisher` and use the `Publish` method like this `await _publisher.Publish(new Entry("studentsQueue", messageContent));`. The content will just be added to outbox and enqueued on your broker if the database commit runs fine.
 
 ***If the BackgroundWorker that sends the messages gets restarted it will re-enqueue ALL the messages with ENQUEUED status at the outbox table. This normaly just occurs when the app gets restarted, yet it is a good idea to implement idempotency at your consumers.***
