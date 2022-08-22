@@ -1,5 +1,8 @@
 
 # Ouboxer
+
+Available at [Nuget](https://www.nuget.org/api/v2/package/Outboxer/1.0.0) 
+
 This lib intends to provide a simple and broker agnostic Outbox Pattern implementation.
 
 The only requirement to use Outboxer is to use Entity Framework as we use its built-in Unit-Of-Work to assure everything is published once and guarantee consistency.
