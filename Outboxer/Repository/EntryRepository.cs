@@ -27,6 +27,24 @@ internal class EntryRepository<TContext> : IEntryRepository where TContext : Out
     public async Task<Entry> Get(Guid entryId) =>
         await _dbSet.FindAsync(entryId);
 
-    public async Task<List<Entry>> GetEnqueued() =>
-        await _dbSet.Where(x => x.Status == StatusEnum.ENQUEUED).ToListAsync();
+    public async Task<List<Entry>> GetEnqueued()
+    {
+        int counter = 0;
+        while (counter <= 5)
+        {
+            try
+            {
+                return await _dbSet.Where(x => x.Status == StatusEnum.ENQUEUED).ToListAsync();
+            }
+            catch (Exception)
+            {
+                counter++;
+                await Task.Delay(500);
+                if (counter == 5)
+                    throw;
+            }
+        }
+
+        return new List<Entry>();
+    }
 }
