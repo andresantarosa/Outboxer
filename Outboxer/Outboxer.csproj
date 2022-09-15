@@ -4,6 +4,13 @@
         <TargetFramework>net6.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Title>Outboxer</Title>
+        <Copyright>Andre Santarosa</Copyright>
+        <PackageProjectUrl>https://github.com/andresantarosa/Outboxer</PackageProjectUrl>
+        <PackageLicenseUrl>https://github.com/andresantarosa/Outboxer/blob/main/LICENSE</PackageLicenseUrl>
+        <RepositoryUrl>https://github.com/andresantarosa/Outboxer</RepositoryUrl>
+        <PackageVersion>1.0.1</PackageVersion>
     </PropertyGroup>
 
     <ItemGroup>
