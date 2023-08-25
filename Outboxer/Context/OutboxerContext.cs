@@ -27,6 +27,43 @@ public class OutboxerContext<TContext> : DbContext where TContext : DbContext
     {
         modelBuilder.Entity<Entry>()
             .HasKey(b => b.Id);
+
+        modelBuilder.Entity<Entry>()
+            .Property(b => b.Destination)
+            .IsRequired()
+            .HasDefaultValue("");
+        
+        modelBuilder.Entity<Entry>()
+            .Property(b => b.Content)
+            .IsRequired()
+            .HasDefaultValue("");
+        
+        modelBuilder.Entity<Entry>()
+            .Property(b => b.Retries)
+            .IsRequired()
+            .HasDefaultValue(5);
+        
+        modelBuilder.Entity<Entry>()
+            .Property(b => b.RetriesCount)
+            .IsRequired()
+            .HasDefaultValue(0);
+        
+        modelBuilder.Entity<Entry>()
+            .Property(b => b.DateCreated)
+            .IsRequired()
+            .HasDefaultValueSql("getdate()");
+        
+        modelBuilder.Entity<Entry>()
+            .Property(b => b.LastInteraction)
+            .IsRequired()
+            .HasDefaultValueSql("getdate()");
+        
+        modelBuilder.Entity<Entry>()
+            .Property(b => b.Status)
+            .IsRequired()
+            .HasDefaultValue(StatusEnum.PENDING);
+        
+        
         modelBuilder.Entity<Entry>().ToTable("Outbox");
     }
 
