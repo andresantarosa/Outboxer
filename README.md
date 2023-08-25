@@ -34,4 +34,20 @@ public class StudentsContext : OutboxerContext<StudentsContext>
 
 * To publish a message inject the interface `IPublisher` and use the `Publish` method like this `await _publisher.Publish(new Entry("studentsQueue", messageContent));`. The content will just be added to outbox and enqueued on your broker if the database commit runs fine.
 
+---
+### Important warnings
+
 ***If the BackgroundWorker that sends the messages gets restarted it will re-enqueue ALL the messages with ENQUEUED status at the outbox table. This normaly just occurs when the app gets restarted, yet it is a good idea to implement idempotency at your consumers.***
+
+***Currently there is no Dead-Letter implementation. If a message reaches the maximum amount of retries it will rest in the table with FAILED status. DLQ Handling to be implemented in next version.***
+
+---
+### Messages Status
+* 1 - Pending
+* 2 - Enqueued
+* 3 - Delivered
+* 4 - Failed
+
+---
+### Changelog
+v1.1.0 - Fixing bug that was preventing the persistence of Destination and Retries on the outbox table. - REQUIRES MIGRATION

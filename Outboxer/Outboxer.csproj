@@ -10,7 +10,7 @@
         <PackageProjectUrl>https://github.com/andresantarosa/Outboxer</PackageProjectUrl>
         <PackageLicenseUrl>https://github.com/andresantarosa/Outboxer/blob/main/LICENSE</PackageLicenseUrl>
         <RepositoryUrl>https://github.com/andresantarosa/Outboxer</RepositoryUrl>
-        <PackageVersion>1.0.1</PackageVersion>
+        <PackageVersion>1.1.0</PackageVersion>
     </PropertyGroup>
 
     <ItemGroup>
